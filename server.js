@@ -22,7 +22,7 @@ app.set('view engine', 'ejs');
 
 instagram.set('client_id', process.env.INSTAGRAM_CLIENT_ID);
 instagram.set('client_secret', '605472b7e3c945ecac616a634016fbd4');
-instagram.set('callback_url', 'http://74b6ee6e.ngrok.io/callback'); 
+instagram.set('callback_url', 'https://stormy-taiga-7271.herokuapp.com/callback'); 
 instagram.set('maxSockets', 50);
 
 app.get('/', function (req, res) {

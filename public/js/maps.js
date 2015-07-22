@@ -9,7 +9,7 @@ var map;
 var geocoder = new google.maps.Geocoder();
 var spinner = $('#spinner');
 var markerPin;
-var socket = io('http://74b6ee6e.ngrok.io'); 
+var socket = io('https://stormy-taiga-7271.herokuapp.com/'); 
 var videos = [];
 var coords;
 var image = '../js/icon_development_small.png';
