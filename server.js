@@ -40,7 +40,7 @@ function unsubscribe(err, response, body) {
 };
 
 app.get('/unsubscribeAll', function (req, res) {
-  var url = 'https://api.instagram.com/v1/subscriptions\?object\=all\&client_id\=' + process.env.INSTAGRAM_CLIENT_ID + '\&client_secret\=' + process.env.INSTAGRAM_CLIENT_SECRET;
+  var url = 'https://api.instagram.com/v1/subscriptions\?object\=all\&client_id\=fee1f7a9b22c41149f86e7a44f199935\&client_secret\=605472b7e3c945ecac616a634016fbd4';
   request(url, unsubscribe);
 });
 
