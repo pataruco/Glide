@@ -7,7 +7,7 @@ var request = require('request');
 var bodyParser = require('body-parser');
 var instagram = require('instagram-node-lib');
 var request = require('request');
-var port = process.env.PORT || 3000;
+var port = process.env.PORT;
 var i;
 var tag;
 
@@ -22,7 +22,7 @@ app.set('view engine', 'ejs');
 
 instagram.set('client_id', 'fee1f7a9b22c41149f86e7a44f199935');
 instagram.set('client_secret', '605472b7e3c945ecac616a634016fbd4');
-instagram.set('callback_url', 'https://stormy-taiga-7271.herokuapp.com/callback'); 
+instagram.set('callback_url', 'https://stormy-taiga-7271.herokuapp.com/callback');
 instagram.set('maxSockets', 50);
 
 app.get('/', function (req, res) {
